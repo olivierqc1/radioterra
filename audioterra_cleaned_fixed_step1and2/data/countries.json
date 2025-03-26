@@ -1,0 +1,187 @@
+[
+  {
+    "name": "États-Unis",
+    "capital": "Washington D.C.",
+    "continent": "Amérique du Nord",
+    "subdivisions": [
+      {
+        "name": "Californie",
+        "capital": "Sacramento"
+      },
+      {
+        "name": "Texas",
+        "capital": "Austin"
+      },
+      {
+        "name": "Floride",
+        "capital": "Tallahassee"
+      },
+      {
+        "name": "New York",
+        "capital": "Albany"
+      },
+      {
+        "name": "Illinois",
+        "capital": "Springfield"
+      }
+    ]
+  },
+  {
+    "name": "Canada",
+    "continent": "Amérique du Nord",
+    "subdivisions": [
+      {
+        "name": "Québec",
+        "capital": "Québec",
+        "musicStyle": "Musique francophone, folk, pop"
+      },
+      {
+        "name": "Ontario",
+        "capital": "Toronto"
+      },
+      {
+        "name": "Colombie-Britannique",
+        "capital": "Victoria"
+      },
+      {
+        "name": "Alberta",
+        "capital": "Edmonton"
+      },
+      {
+        "name": "Manitoba",
+        "capital": "Winnipeg"
+      }
+    ]
+  },
+  {
+    "name": "Royaume-Uni",
+    "continent": "Europe",
+    "subdivisions": [
+      {
+        "name": "Angleterre",
+        "capital": "Londres"
+      },
+      {
+        "name": "Écosse",
+        "capital": "Édimbourg"
+      },
+      {
+        "name": "Pays de Galles",
+        "capital": "Cardiff"
+      },
+      {
+        "name": "Irlande du Nord",
+        "capital": "Belfast"
+      }
+    ]
+  },
+  {
+    "name": "Australie",
+    "capital": "Canberra",
+    "continent": "Océanie"
+  },
+  {
+    "name": "France",
+    "continent": "Europe",
+    "subdivisions": [
+      {
+        "name": "Île-de-France",
+        "capital": "Paris"
+      },
+      {
+        "name": "Auvergne-Rhône-Alpes",
+        "capital": "Lyon"
+      },
+      {
+        "name": "Provence-Alpes-Côte d'Azur",
+        "capital": "Marseille"
+      }
+    ]
+  },
+  {
+    "name": "Irlande",
+    "continent": "Europe",
+    "capital": "Dublin"
+  },
+  {
+    "name": "Belgique",
+    "continent": "Europe",
+    "capital": "Bruxelles",
+    "subdivisions": [
+      {
+        "name": "Flandre",
+        "capital": "Bruxelles"
+      },
+      {
+        "name": "Wallonie",
+        "capital": "Namur"
+      }
+    ]
+  },
+  {
+    "name": "Suisse",
+    "continent": "Europe",
+    "capital": "Berne"
+  },
+  {
+    "name": "Japon",
+    "capital": "Tokyo",
+    "continent": "Asie",
+    "subdivisions": [
+      {
+        "name": "Kantō",
+        "capital": "Saitama"
+      },
+      {
+        "name": "Kansai",
+        "capital": "Osaka"
+      },
+      {
+        "name": "Tōhoku",
+        "capital": "Sendai"
+      }
+    ]
+  },
+  {
+    "name": "Corée du Sud",
+    "continent": "Asie",
+    "capital": "Séoul"
+  },
+  {
+    "name": "Taiwan",
+    "continent": "Asie",
+    "capital": "Taipei"
+  },
+  {
+    "name": "Inde",
+    "continent": "Asie",
+    "capital": "New Delhi",
+    "subdivisions": [
+      {
+        "name": "Maharashtra",
+        "capital": "Mumbai",
+        "musicStyle": "Musique Bollywood, musique classique indienne"
+      },
+      {
+        "name": "Tamil Nadu",
+        "capital": "Chennai",
+        "musicStyle": "Musique carnatique"
+      },
+      {
+        "name": "Bengale occidental",
+        "capital": "Kolkata",
+        "musicStyle": "Musique Rabindra Sangeet, Baul"
+      },
+      {
+        "name": "Pendjab",
+        "capital": "Chandigarh",
+        "musicStyle": "Musique Bhangra"
+      },
+      {
+        "name": "Rajasthan",
+        "capital": "Jaipur",
+        "musicStyle": "Musique folklorique rajasthani"  
+      }
+    ]
+  }
+]

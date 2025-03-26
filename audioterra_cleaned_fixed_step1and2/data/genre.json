@@ -1,0 +1,690 @@
+// Ajout de nouveaux genres à la base de données existante
+// Nous allons ajouter ces genres au tableau existant: musicData.genres
+
+// =============================================
+// Nouveaux genres principaux à ajouter
+// =============================================
+const newGenres = [
+  {
+    name: "Hip-Hop/Rap",
+    period: "1970s - aujourd'hui",
+    variants: [],
+  },
+  {
+    name: "Électronique",
+    period: "1970s - aujourd'hui",
+    variants: [],
+  },
+  {
+    name: "Pop",
+    period: "1950s - aujourd'hui",
+    variants: [],
+  },
+  {
+    name: "R&B/Soul",
+    period: "1940s - aujourd'hui",
+    variants: [],
+  },
+  {
+    name: "Reggae",
+    period: "1960s - aujourd'hui",
+    variants: [],
+  },
+  {
+    name: "Folk",
+    period: "Ancien - aujourd'hui",
+    variants: [],
+  },
+  {
+    name: "Country",
+    period: "1920s - aujourd'hui",
+    variants: [],
+  },
+];
+
+// Ajouter les nouveaux genres au tableau existant
+musicData.genres = [...musicData.genres, ...newGenres];
+
+// =============================================
+// Sous-genres et variants du Hip-Hop/Rap
+// =============================================
+musicData.genres[5].variants = [
+  {
+    name: "Old School Rap",
+    period: "1970s-1980s",
+    description: "Premières formes du hip-hop",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX186v583rmzp",
+  },
+  {
+    name: "Golden Age Hip-Hop",
+    period: "1980s-1990s",
+    description: "Période classique du hip-hop",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWVA1Gq4XHa6U",
+  },
+  {
+    name: "Gangsta Rap",
+    period: "1980s-1990s",
+    description: "Style basé sur la vie des gangs urbains",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX7WOJMXUcCjc",
+  },
+  {
+    name: "East Coast Hip-Hop",
+    period: "1990s",
+    description: "Style de New York et côte est",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX2RxBh64BHjQ",
+  },
+  {
+    name: "West Coast Hip-Hop",
+    period: "1990s",
+    description: "Style de Los Angeles et côte ouest",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX94qaUnOvbyC",
+  },
+  {
+    name: "Southern Hip-Hop",
+    period: "1990s-2000s",
+    description: "Style du sud des États-Unis",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX0Bgam5tDmY1",
+  },
+  {
+    name: "Trap",
+    period: "2000s-aujourd'hui",
+    description: "Hip-hop moderne avec rythmes électroniques",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX0FGW2D0I5ZY",
+  },
+  {
+    name: "Conscious Hip-Hop",
+    period: "1980s-aujourd'hui",
+    description: "Hip-hop avec messages sociaux et politiques",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX3j9EYdzv2N9",
+  },
+  {
+    name: "Alternative Hip-Hop",
+    period: "1990s-aujourd'hui",
+    description: "Hip-hop expérimental et non-conventionnel",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWUrPBdYfoJvz",
+  },
+  {
+    name: "Mumble Rap",
+    period: "2010s-aujourd'hui",
+    description: "Rap moderne avec prononciation moins distincte",
+    spotifyLink: "https://open.spotify.com/playlist/6X9k9l18lGQoGRq9qEgCjJ",
+  },
+  {
+    name: "Drill",
+    period: "2010s-aujourd'hui",
+    description: "Style de Chicago avec paroles sombres",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX6gCjrOtJKNp",
+  },
+  {
+    name: "French Rap",
+    period: "1990s-aujourd'hui",
+    description: "Rap en langue française",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWZCkac2I7uqJ",
+  },
+];
+
+// =============================================
+// Sous-genres et variants de l'Électronique
+// =============================================
+musicData.genres[6].variants = [
+  {
+    name: "House",
+    period: "1980s-aujourd'hui",
+    description: "Style de musique électronique avec rythmes 4/4",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9I8QAFb7ytU",
+    subgenres: [
+      {
+        name: "Deep House",
+        period: "1990s-aujourd'hui",
+        spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX2TRYkJECvfC",
+      },
+      {
+        name: "Tech House",
+        period: "1990s-aujourd'hui",
+        spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX5xiztvBdlUf",
+      },
+      {
+        name: "Progressive House",
+        period: "1990s-aujourd'hui",
+        spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX6GJXiuZRisr",
+      },
+    ],
+  },
+  {
+    name: "Techno",
+    period: "1980s-aujourd'hui",
+    description: "Style électronique rapide et répétitif",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX6J5NfMJS675",
+  },
+  {
+    name: "Trance",
+    period: "1990s-aujourd'hui",
+    description: "Style hypnotique avec progression",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX5wgKYQVRARv",
+  },
+  {
+    name: "Drum and Bass",
+    period: "1990s-aujourd'hui",
+    description: "Style rapide avec basses profondes",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX8jnAPF7Iiqp",
+  },
+  {
+    name: "Dubstep",
+    period: "2000s-aujourd'hui",
+    description: "Style avec basses wobble",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX0hvSR8VHIjy",
+  },
+  {
+    name: "Ambient",
+    period: "1970s-aujourd'hui",
+    description: "Musique électronique atmosphérique",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWUrPcvmDj9iT",
+  },
+  {
+    name: "IDM (Intelligent Dance Music)",
+    period: "1990s-aujourd'hui",
+    description: "Électronique complexe et expérimentale",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXa2SPUyWl8Y5",
+  },
+  {
+    name: "EDM (Electronic Dance Music)",
+    period: "2000s-aujourd'hui",
+    description: "Électronique commerciale pour clubs",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX4dyzvuaP9cj",
+  },
+  {
+    name: "French Touch",
+    period: "1990s-2000s",
+    description: "Électronique française influente",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX5WmphPrRLGE",
+  },
+];
+
+// =============================================
+// Sous-genres et variants de la Pop
+// =============================================
+musicData.genres[7].variants = [
+  {
+    name: "Pop Traditionnelle",
+    period: "1950s-1970s",
+    description: "Musique pop classique",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX3LyU0mhUqzz",
+  },
+  {
+    name: "Bubblegum Pop",
+    period: "1960s-1970s",
+    description: "Pop légère et commerciale",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX7cLxqtNO3zl",
+  },
+  {
+    name: "Disco Pop",
+    period: "1970s",
+    description: "Pop influencée par le disco",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX3ZeFHRhhi7Y",
+  },
+  {
+    name: "Synthpop",
+    period: "1980s",
+    description: "Pop avec synthétiseurs",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX2W6AhhHuQN4",
+  },
+  {
+    name: "Dance Pop",
+    period: "1980s-aujourd'hui",
+    description: "Pop orientée danse",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWZQaaqNMbbXa",
+  },
+  {
+    name: "Teen Pop",
+    period: "1990s-aujourd'hui",
+    description: "Pop ciblant les adolescents",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9bAf4c66TGs",
+  },
+  {
+    name: "Électropop",
+    period: "2000s-aujourd'hui",
+    description: "Pop moderne avec éléments électroniques",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX7Q1SwSkHHIO",
+  },
+  {
+    name: "K-Pop",
+    period: "1990s-aujourd'hui",
+    description: "Pop coréenne",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX14fiWYoe7Oh",
+  },
+  {
+    name: "J-Pop",
+    period: "1980s-aujourd'hui",
+    description: "Pop japonaise",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXdbRLJPSmnyq",
+  },
+  {
+    name: "Indie Pop",
+    period: "1980s-aujourd'hui",
+    description: "Pop indépendante",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9Lf2o8jam1X",
+  },
+];
+
+// =============================================
+// Sous-genres et variants du R&B/Soul
+// =============================================
+musicData.genres[8].variants = [
+  {
+    name: "Soul Classique",
+    period: "1950s-1970s",
+    description: "Soul traditionnel",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWULEW2RfoSCi",
+  },
+  {
+    name: "Motown",
+    period: "1960s-1970s",
+    description: "Soul commercial de Detroit",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9GRpeH4CL0S",
+  },
+  {
+    name: "Funk",
+    period: "1960s-1970s",
+    description: "R&B rythmique et dansant",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWVPJN8O1oNMT",
+  },
+  {
+    name: "Contemporary R&B",
+    period: "1980s-aujourd'hui",
+    description: "R&B moderne",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWXbttAJcbphz",
+  },
+  {
+    name: "Neo-Soul",
+    period: "1990s-aujourd'hui",
+    description: "Soul contemporain avec influences classiques",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX35X4JNyBWtb",
+  },
+  {
+    name: "Gospel",
+    period: "1930s-aujourd'hui",
+    description: "Musique religieuse afro-américaine",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXbcPC6Vvqudd",
+  },
+];
+
+// =============================================
+// Sous-genres et variants du Reggae
+// =============================================
+musicData.genres[9].variants = [
+  {
+    name: "Ska",
+    period: "1950s-1960s",
+    description: "Précurseur du reggae",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXby3fXbUcOqv",
+  },
+  {
+    name: "Rocksteady",
+    period: "1960s",
+    description: "Style entre ska et reggae",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX4o2NE5QVlt9",
+  },
+  {
+    name: "Reggae Roots",
+    period: "1970s",
+    description: "Reggae traditionnel",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXcCGb3hGvSOr",
+  },
+  {
+    name: "Dub",
+    period: "1970s",
+    description: "Reggae instrumental remixé",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWV3krpLkiPOA",
+  },
+  {
+    name: "Dancehall",
+    period: "1980s-aujourd'hui",
+    description: "Reggae plus rapide et digital",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXchOWDQjt2Nd",
+  },
+  {
+    name: "Ragga",
+    period: "1980s-aujourd'hui",
+    description: "Reggae digital avec MCing",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DXar32rMuK9nQ",
+  },
+  {
+    name: "Reggaeton",
+    period: "1990s-aujourd'hui",
+    description: "Fusion reggae et rythmes latins",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWY7IeIP1cdjF",
+  },
+];
+
+// =============================================
+// Sous-genres et variants du Folk
+// =============================================
+musicData.genres[10].variants = [
+  {
+    name: "Folk Traditionnel",
+    period: "Ancien-aujourd'hui",
+    description: "Musique traditionnelle transmise oralement",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9I5ca8DRl4A",
+  },
+  {
+    name: "Folk Revival",
+    period: "1960s",
+    description: "Renaissance de la musique folk",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWZKs4DLZrQ0l",
+  },
+  {
+    name: "Contemporary Folk",
+    period: "1970s-aujourd'hui",
+    description: "Folk moderne",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9MN0SRbyXvS",
+  },
+  {
+    name: "Indie Folk",
+    period: "2000s-aujourd'hui",
+    description: "Folk indépendant",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWUCf1Vcf8zWV",
+  },
+  {
+    name: "Folk Rock",
+    period: "1960s-aujourd'hui",
+    description: "Fusion folk et rock",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX9HrlPGeLLCH",
+  },
+  {
+    name: "Celtic Folk",
+    period: "Ancien-aujourd'hui",
+    description: "Musique traditionnelle des pays celtiques",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX3FNkD0kDpDV",
+  },
+  {
+    name: "Musique Traditionnelle Française",
+    period: "Ancien-aujourd'hui",
+    description: "Folk de France",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX7bsW8x4wGZX",
+  },
+];
+
+// =============================================
+// Sous-genres et variants du Country
+// =============================================
+musicData.genres[11].variants = [
+  {
+    name: "Country Traditionnel",
+    period: "1920s-1950s",
+    description: "Country originel",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWZBCPUIUs2iR",
+  },
+  {
+    name: "Honky Tonk",
+    period: "1940s-1950s",
+    description: "Style de bars country",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX8S0uQvJ4gaa",
+  },
+  {
+    name: "Bluegrass",
+    period: "1940s-aujourd'hui",
+    description: "Country acoustique rapide",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX6mA1zs4afQ2",
+  },
+  {
+    name: "Country Pop",
+    period: "1970s-aujourd'hui",
+    description: "Country commercial",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWTwnEm1IYyoj",
+  },
+  {
+    name: "Outlaw Country",
+    period: "1970s",
+    description: "Country rebelle",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DWTkxQvqMy4WW",
+  },
+  {
+    name: "Alternative Country",
+    period: "1990s-aujourd'hui",
+    description: "Country non-commercial",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX8VM4gKOeNxU",
+  },
+  {
+    name: "Contemporary Country",
+    period: "2000s-aujourd'hui",
+    description: "Country moderne",
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DX1lVhptIYRda",
+  },
+];
+
+// =============================================
+// Mise à jour des relations culturelles pour inclure plus de pays
+// =============================================
+const newCulturalRelations = {
+  "Brésil": ["Portugal", "Argentine", "États-Unis"],
+  "Jamaïque": ["Royaume-Uni", "États-Unis", "Ghana"],
+  "Inde": ["Royaume-Uni", "Pakistan", "Bangladesh"],
+  "Espagne": ["Mexique", "Argentine", "Cuba"],
+  "Allemagne": ["Autriche", "Suisse", "Pays-Bas"],
+  "Italie": ["France", "Suisse", "Espagne"],
+  "Suède": ["Norvège", "Danemark", "Finlande"],
+  "Nigeria": ["Ghana", "Royaume-Uni", "Afrique du Sud"],
+  "Cuba": ["Espagne", "États-Unis", "Puerto Rico"],
+  "Corée du Sud": ["Japon", "États-Unis", "Chine"],
+};
+
+// Fusionner les nouvelles relations culturelles avec les existantes
+Object.assign(culturalRelations, newCulturalRelations);
+
+// =============================================
+// Fonction pour générer des recommandations personnalisées
+// =============================================
+function generatePersonalizedRecommendations(userPreferences) {
+  let recommendations = {
+    genres: [],
+    countries: [],
+    playlists: []
+  };
+  
+  // Recommandations basées sur les genres préférés
+  userPreferences.favoriteGenres.forEach(genreName => {
+    const genre = musicData.genres.find(g => g.name === genreName);
+    if (genre && genre.variants) {
+      // Ajouter quelques variantes aléatoires du genre
+      const randomVariants = genre.variants
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 3);
+      
+      recommendations.genres.push(...randomVariants.map(v => ({
+        name: v.name,
+        parentGenre: genreName,
+        description: v.description || "",
+        spotifyLink: v.spotifyLink || ""
+      })));
+    }
+  });
+  
+  // Recommandations basées sur les pays préférés
+  userPreferences.favoriteCountries.forEach(country => {
+    if (culturalRelations[country]) {
+      recommendations.countries.push(...culturalRelations[country]);
+      
+      // Trouver des genres associés aux pays connectés
+      culturalRelations[country].forEach(relatedCountry => {
+        // Chercher des genres liés au pays (simplification: basé sur le nom)
+        const relatedGenres = musicData.genres.filter(genre => 
+          genre.name.includes(relatedCountry) || 
+          (genre.variants && genre.variants.some(v => v.name.includes(relatedCountry)))
+        );
+        
+        if (relatedGenres.length > 0) {
+          recommendations.genres.push(...relatedGenres.map(g => ({
+            name: g.name,
+            parentGenre: "",
+            description: "Associé à " + relatedCountry,
+            spotifyLink: g.variants && g.variants[0] ? g.variants[0].spotifyLink : ""
+          })));
+        }
+      });
+    }
+  });
+  
+  // Dédupliquer les recommandations
+  recommendations.genres = Array.from(new Set(recommendations.genres.map(g => g.name)))
+    .map(name => recommendations.genres.find(g => g.name === name));
+  
+  recommendations.countries = Array.from(new Set(recommendations.countries));
+  
+  // Ajouter des playlists Spotify recommandées
+  recommendations.playlists = recommendations.genres
+    .filter(g => g.spotifyLink)
+    .map(g => ({
+      name: g.name,
+      link: g.spotifyLink
+    }));
+  
+  return recommendations;
+}
+
+// Utilisation dans l'application
+// Dans le composant App, vous pouvez ajouter:
+/*
+const [recommendations, setRecommendations] = useState({
+  genres: [],
+  countries: [],
+  playlists: []
+});
+
+// Dans useEffect ou après une rotation de roue:
+const newRecommendations = generatePersonalizedRecommendations(userPreferences);
+setRecommendations(newRecommendations);
+*/
+
+// =============================================
+// Fonction pour afficher l'historique des découvertes
+// =============================================
+function DiscoveryHistory({ userPreferences }) {
+  const [historyEntries, setHistoryEntries] = useState(() => {
+    const savedHistory = localStorage.getItem("musicExplorerHistory");
+    return savedHistory ? JSON.parse(savedHistory) : [];
+  });
+  
+  const addHistoryEntry = (genre, country, rating) => {
+    const newEntry = {
+      date: new Date().toISOString(),
+      genre,
+      country,
+      rating,
+      notes: ""
+    };
+    
+    const updatedHistory = [newEntry, ...historyEntries];
+    setHistoryEntries(updatedHistory);
+    localStorage.setItem("musicExplorerHistory", JSON.stringify(updatedHistory));
+  };
+  
+  const updateNotes = (index, notes) => {
+    const updatedHistory = [...historyEntries];
+    updatedHistory[index].notes = notes;
+    setHistoryEntries(updatedHistory);
+    localStorage.setItem("musicExplorerHistory", JSON.stringify(updatedHistory));
+  };
+  
+  return (
+    <div style={styles.preferencesSection}>
+      <h2>Historique des Découvertes</h2>
+      <div>
+        {historyEntries.length === 0 ? (
+          <p>Aucune découverte enregistrée. Tournez les roues pour commencer !</p>
+        ) : (
+          historyEntries.map((entry, index) => (
+            <div key={index} style={{
+              background: "rgba(30, 30, 30, 0.5)",
+              margin: "10px 0",
+              padding: "15px",
+              borderRadius: "8px"
+            }}>
+              <p><strong>Date:</strong> {new Date(entry.date).toLocaleDateString()}</p>
+              <p><strong>Genre:</strong> {entry.genre}</p>
+              <p><strong>Pays:</strong> {entry.country}</p>
+              <p><strong>Évaluation:</strong> {Array(entry.rating).fill("⭐").join("")}</p>
+              <textarea 
+                value={entry.notes}
+                onChange={(e) => updateNotes(index, e.target.value)}
+                placeholder="Ajouter des notes..."
+                style={styles.textarea}
+              />
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Pour l'utiliser, ajoutez dans le composant App:
+// <DiscoveryHistory userPreferences={userPreferences} />
+
+// =============================================
+// Composant pour afficher des statistiques d'utilisation
+// =============================================
+function UserStats({ userPreferences }) {
+  // Calculer diverses statistiques
+  const totalGenresDiscovered = userPreferences.favoriteGenres.length;
+  const totalCountriesDiscovered = userPreferences.favoriteCountries.length;
+  
+  // Trouver les sous-genres explorés
+  const subgenresExplored = musicData.genres
+    .filter(genre => userPreferences.favoriteGenres.includes(genre.name))
+    .flatMap(genre => genre.variants)
+    .filter(variant => variant)
+    .length;
+  
+  // Trouver le genre préféré basé sur les évaluations
+  const favoriteGenre = Object.entries(userPreferences.ratings || {})
+    .filter(([key]) => key.startsWith('genre_'))
+    .sort(([, a], [, b]) => b - a)[0];
+  
+  const favoriteGenreName = favoriteGenre 
+    ? favoriteGenre[0].replace('genre_', '') 
+    : "Aucun encore";
+  
+  return (
+    <div style={styles.preferencesSection}>
+      <h2>Vos Statistiques d'Exploration</h2>
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+        gap: "20px",
+        marginTop: "15px"
+      }}>
+        <div style={{
+          background: "linear-gradient(45deg, rgba(98, 0, 238, 0.2), rgba(3, 218, 198, 0.2))",
+          padding: "15px",
+          borderRadius: "8px",
+          textAlign: "center"
+        }}>
+          <h3>Genres</h3>
+          <p style={{ fontSize: "2rem" }}>{totalGenresDiscovered}</p>
+          <p>genres principaux découverts</p>
+        </div>
+        
+        <div style={{
+          background: "linear-gradient(45deg, rgba(98, 0, 238, 0.2), rgba(3, 218, 198, 0.2))",
+          padding: "15px",
+          borderRadius: "8px",
+          textAlign: "center"
+        }}>
+          <h3>Sous-genres</h3>
+          <p style={{ fontSize: "2rem" }}>{subgenresExplored}</p>
+          <p>variantes explorées</p>
+        </div>
+        
+        <div style={{
+          background: "linear-gradient(45deg, rgba(98, 0, 238, 0.2), rgba(3, 218, 198, 0.2))",
+          padding: "15px",
+          borderRadius: "8px",
+          textAlign: "center"
+        }}>
+          <h3>Pays</h3>
+          <p style={{ fontSize: "2rem" }}>{totalCountriesDiscovered}</p>
+          <p>cultures découvertes</p>
+        </div>
+        
+        <div style={{
+          background: "linear-gradient(45deg, rgba(98, 0, 238, 0.2), rgba(3, 218, 198,
